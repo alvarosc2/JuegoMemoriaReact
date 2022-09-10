@@ -1,0 +1,54 @@
+body{
+    background:#1ECBE1;
+  }
+  
+  .flip3D{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:large;
+    font-weight:bold;
+    width:240px;
+    height:200px;
+    margin:10px;
+    float:left;
+    position:relative;
+    left:200px;
+  }
+  
+  .flip3D > .front{
+    position:absolute;
+    transform:perspective(600px)rotateY(0deg);
+    color:yellow;
+    background: blue;
+    text-align: center;
+    width:240px;
+    height:300px;
+    line-height: 5px;
+    border-radius:7px;
+    backface-visibility:hidden;
+    transition:transform 0.5s linear 0s;
+  }
+  
+  .flip3D > .back{
+    position:absolute;
+    transform:perspective(600px)rotateY(180deg);
+    background: white;
+    width:240px;
+    height:300px;
+    border-radius:7px;
+    backface-visibility:hidden;
+    transition:transform 0.5s linear 0s;
+  }
+  
+  :checked + .flip3D > .front{
+    transform:perspective(600px)rotateY(-180deg);
+  }
+  
+  :checked + .flip3D > .back{
+    transform:perspective(600px)rotateY(0deg);
+  }
+
+  h1 {
+    font-size: 150px;
+  }
+
+  
