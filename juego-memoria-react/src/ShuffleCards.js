@@ -17,5 +17,3 @@ export function ShuffleCards() {
 
     return deck
 }
-
-// console.log(ShuffleCards()) this is here for testing purposes

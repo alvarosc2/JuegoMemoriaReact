@@ -15,6 +15,9 @@ body{
   }
   
   .flip3D > .front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position:absolute;
     transform:perspective(600px)rotateY(0deg);
     color:yellow;
@@ -35,6 +38,8 @@ body{
     width:120px;
     height:200px;
     border-radius:7px;
+    border: solid;
+    border-color: black;
     backface-visibility:hidden;
     transition:transform 0.5s linear 0s;
   }
@@ -47,10 +52,9 @@ body{
     transform:perspective(600px)rotateY(0deg);
   }
 
-  h1 {
-    font-size: 150px;
+  input {
+    visibility: hidden;
   }
-
 
 
   

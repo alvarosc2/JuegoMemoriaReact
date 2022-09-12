@@ -1,0 +1,25 @@
+.sound-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position:absolute;
+    width: 120px;
+    height: 100px;
+    top: 20px;
+    right: 20px;
+    border: solid;
+    border-radius: 7px;
+}
+
+.soundon {
+    position:absolute;
+    visibility: hidden;
+}
+
+.soundoff {
+    position: absolute;
+    visibility: visible;
+}
+
+
